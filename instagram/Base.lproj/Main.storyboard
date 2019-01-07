@@ -118,7 +118,7 @@
                                 </constraints>
                                 <state key="normal" title="ログイン" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleLoginButton:" destination="Sk0-PD-vBM" eventType="touchUpInside" id="yMS-cb-r6G"/>
+                                    <action selector="handleLoginButton:" destination="Sk0-PD-vBM" eventType="touchUpInside" id="dYH-2C-QSI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEP-GY-mf1">
@@ -128,7 +128,7 @@
                                 </constraints>
                                 <state key="normal" title="アカウント作成" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleCreateAccountButton:" destination="Sk0-PD-vBM" eventType="touchUpInside" id="Sl9-db-Xax"/>
+                                    <action selector="handleCreateAccountButton:" destination="Sk0-PD-vBM" eventType="touchUpInside" id="YCx-eT-Jc8"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IUN-Zi-a3H">
@@ -157,9 +157,9 @@
                         <viewLayoutGuide key="safeArea" id="yUX-2c-t9M"/>
                     </view>
                     <connections>
-                        <outlet property="displayNameTextField" destination="N1a-2G-FmI" id="9gJ-W0-xHr"/>
-                        <outlet property="mailAddressTextField" destination="IUN-Zi-a3H" id="lCn-RD-G1Z"/>
-                        <outlet property="passwordTextField" destination="ryU-R3-1vY" id="Q3i-vo-CVf"/>
+                        <outlet property="displayNameTextField" destination="N1a-2G-FmI" id="8Sv-Uj-6cU"/>
+                        <outlet property="mailAddressTextField" destination="IUN-Zi-a3H" id="kmN-vo-7cP"/>
+                        <outlet property="passwordTextField" destination="ryU-R3-1vY" id="ybZ-gx-mUw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCe-6d-COg" userLabel="First Responder" sceneMemberID="firstResponder"/>
