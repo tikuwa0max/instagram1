@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5502B9E621E1AED0009925DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5502B9E521E1AED0009925DE /* GoogleService-Info.plist */; };
+		5506CD8E21E5D07900FAE63C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506CD8D21E5D07900FAE63C /* Const.swift */; };
+		5506CD9021E5D51F00FAE63C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506CD8F21E5D51F00FAE63C /* PostData.swift */; };
+		5506CD9321E5D65200FAE63C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506CD9121E5D65200FAE63C /* PostTableViewCell.swift */; };
+		5506CD9421E5D65200FAE63C /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5506CD9221E5D65200FAE63C /* PostTableViewCell.xib */; };
 		5548490F21DEDB0300C563E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548490E21DEDB0300C563E0 /* AppDelegate.swift */; };
 		5548491121DEDB0300C563E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548491021DEDB0300C563E0 /* ViewController.swift */; };
 		5548491421DEDB0300C563E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5548491221DEDB0300C563E0 /* Main.storyboard */; };
@@ -23,6 +27,10 @@
 
 /* Begin PBXFileReference section */
 		5502B9E521E1AED0009925DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5506CD8D21E5D07900FAE63C /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		5506CD8F21E5D51F00FAE63C /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		5506CD9121E5D65200FAE63C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		5506CD9221E5D65200FAE63C /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		5548490B21DEDB0300C563E0 /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5548490E21DEDB0300C563E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5548491021DEDB0300C563E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5548490E21DEDB0300C563E0 /* AppDelegate.swift */,
+				5506CD8D21E5D07900FAE63C /* Const.swift */,
 				5548491021DEDB0300C563E0 /* ViewController.swift */,
 				5548491221DEDB0300C563E0 /* Main.storyboard */,
 				5548491521DEDB0600C563E0 /* Assets.xcassets */,
@@ -93,6 +102,9 @@
 				5548492821DEDB8600C563E0 /* SettingViewController.swift */,
 				5548491A21DEDB0600C563E0 /* Info.plist */,
 				5502B9E521E1AED0009925DE /* GoogleService-Info.plist */,
+				5506CD8F21E5D51F00FAE63C /* PostData.swift */,
+				5506CD9121E5D65200FAE63C /* PostTableViewCell.swift */,
+				5506CD9221E5D65200FAE63C /* PostTableViewCell.xib */,
 			);
 			path = instagram;
 			sourceTree = "<group>";
@@ -167,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5548491921DEDB0600C563E0 /* LaunchScreen.storyboard in Resources */,
+				5506CD9421E5D65200FAE63C /* PostTableViewCell.xib in Resources */,
 				5548491621DEDB0600C563E0 /* Assets.xcassets in Resources */,
 				5502B9E621E1AED0009925DE /* GoogleService-Info.plist in Resources */,
 				5548491421DEDB0300C563E0 /* Main.storyboard in Resources */,
@@ -201,17 +214,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-instagram/Pods-instagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CLImageEditor/CLImageEditor.framework",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController/ESTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLImageEditor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -228,10 +245,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5548492721DEDB7600C563E0 /* PostViewController.swift in Sources */,
+				5506CD9021E5D51F00FAE63C /* PostData.swift in Sources */,
 				5548492121DEDB3E00C563E0 /* LoginViewController.swift in Sources */,
 				5548491121DEDB0300C563E0 /* ViewController.swift in Sources */,
 				5548490F21DEDB0300C563E0 /* AppDelegate.swift in Sources */,
 				5548492521DEDB6500C563E0 /* ImageSelectViewController.swift in Sources */,
+				5506CD8E21E5D07900FAE63C /* Const.swift in Sources */,
+				5506CD9321E5D65200FAE63C /* PostTableViewCell.swift in Sources */,
 				5548492921DEDB8600C563E0 /* SettingViewController.swift in Sources */,
 				5548492321DEDB4E00C563E0 /* HomeViewController.swift in Sources */,
 			);
