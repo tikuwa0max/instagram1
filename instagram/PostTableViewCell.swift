@@ -15,6 +15,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+    @IBAction func CommentButton(_ sender: Any){
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
