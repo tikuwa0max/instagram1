@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import SVProgressHUD
 
 class PostTableViewCell: UITableViewCell {
 
@@ -15,8 +18,13 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
-    @IBAction func CommentButton(_ sender: Any){
-    }
+    @IBOutlet weak var CommentSentence: UITextField!
+    @IBOutlet weak var CommentView: UITextView!
+    @IBOutlet weak var commentButton: UIButton!
+    
+
+
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,6 +48,12 @@ class PostTableViewCell: UITableViewCell {
         let dateString = formatter.string(from: postData.date!)
         self.dateLabel.text = dateString
         
+        var commentText = ""
+        for comment in postData.comment {
+            commentText += "\(comment) \n"
+        }
+        self.CommentView.text = commentText
+            
         if postData.isLiked {
             let buttonImage = UIImage(named: "like_exist")
             self.likeButton.setImage(buttonImage, for: .normal)
@@ -48,5 +62,9 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: .normal)
         }
     }
+        
+
+    
+    
     
 }

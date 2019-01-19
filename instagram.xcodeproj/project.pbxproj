@@ -68,6 +68,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5506CD9C21EB101E00FAE63C /* post */ = {
+			isa = PBXGroup;
+			children = (
+				5506CD8F21E5D51F00FAE63C /* PostData.swift */,
+				5506CD9121E5D65200FAE63C /* PostTableViewCell.swift */,
+				5506CD9221E5D65200FAE63C /* PostTableViewCell.xib */,
+			);
+			name = post;
+			sourceTree = "<group>";
+		};
 		5548490221DEDB0300C563E0 = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +112,7 @@
 				5548492821DEDB8600C563E0 /* SettingViewController.swift */,
 				5548491A21DEDB0600C563E0 /* Info.plist */,
 				5502B9E521E1AED0009925DE /* GoogleService-Info.plist */,
-				5506CD8F21E5D51F00FAE63C /* PostData.swift */,
-				5506CD9121E5D65200FAE63C /* PostTableViewCell.swift */,
-				5506CD9221E5D65200FAE63C /* PostTableViewCell.xib */,
+				5506CD9C21EB101E00FAE63C /* post */,
 			);
 			path = instagram;
 			sourceTree = "<group>";
