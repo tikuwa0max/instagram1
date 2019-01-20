@@ -178,7 +178,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
        
         let cell = tableView.cellForRow(at: indexPath!) as! PostTableViewCell
         let comment = cell.CommentSentence.text!
-        let commentname = "\(postData.name!) : \(comment)"
+        let commentname = "\(Auth.auth().currentUser!.displayName!) : \(comment)"
             
         postData.comment.append(commentname)
         
